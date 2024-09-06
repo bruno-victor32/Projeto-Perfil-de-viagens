@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 :root{
+  /*Variáveis para cor*/
   --brand-color: #EF5F4C;
   --background-color: #FFFFFF;
   --surface-color: #F5F5F5;
@@ -13,9 +13,18 @@
   --shape-transparency: #ffffff8f;
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
+
+  /*Variáveis para fonte*/
+  --font-family: "Poppins", sans-serif;
+  --text: regular 16px/1.5 var(--font-family); /*text normal   1.5 é igual a 150%, 1.5 x 16px = 24px*/
+  --text-lg: bold 32px/125% var(--font-family) ; /*lg =  large  =  grande*/
+  --text-md: regular 14px/170% var(--font-family) ; /*md =  medium =  médio*/
+  --text-sm: regular 12px/170% var(--font-family); /*sm =  smoll  =  pequeno*/
 }
 
 body{
+  font: var(--text);
   color: var(--text-color-secondary); /*Cor do texto*/
-  background-color: var(--background-color) ; /*Cor de fundo*/
+  background-color: var(--background-color); /*Cor de fundo*/
 }
+
