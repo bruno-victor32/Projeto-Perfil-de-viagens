@@ -1,0 +1,26 @@
+/*Estilo da área de NAVegação do site*/
+
+nav{
+  display: flex; /*Permite o elemento ficar um ao lado do outro*/
+  justify-content: space-between; /*Adicionando espaço entre os elementos*/
+  align-items: center; /*Alinhamento centralizado*/
+  line-height: 0; /*Retirando qualquer espaço extra que existe*/
+  padding-block: 20px; /*Espaço em cima é embaixo*/
+
+}
+
+nav ul {
+  list-style: none; /*Retirando os pontinhos da lista*/
+  display: flex;  /*Deixando os elementos ficar um ao lado do outro*/
+  align-items: center;
+  gap: 24px;
+  padding-block: 8px; /*8px em cima e embaixo*/
+}
+
+/*Estou pegando o último filho do li, ou seja, não quero que pegue a primeira img*/
+nav ul li:last-child img { 
+  width: 40px; /*Largura*/
+  height: 40px; /*Altura*/
+  object-fit: cover; /*Qual é o encaixe do objeto que nesse caso é img. Nesse caso é cover pq vai cobrir todo espaço de 40px por 40px*/
+  border-radius: 50%; /*Arredondamento da borda*/
+}

@@ -28,3 +28,24 @@ body{
   background-color: var(--background-color); /*Cor de fundo*/
 }
 
+a{
+  text-decoration: none; /*Retirando a decoração do texto "underline"*/
+  color: inherit;/*Cor será herdada, ou sejá, vai pegar a cor do pai que nesse caso é o body*/
+}
+
+/*O :hover possibilita um elemento ter o seu estilo e cor alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento.*/
+a:hover{
+  color: var(--brand-color);
+  text-decoration: underline; /*Quando passar o mouse, vai surgir o undeline*/
+}
+
+/*Criando uma classe*/
+.container{
+  padding-inline: 32px; /*Espaçamento somente nas laterais direita e esquerda*/
+  max-width: 1280px; /*Largura máxima*/
+  margin-inline:auto;/*Espaçamento somente nas laterais direita e esquerda*/
+}
+
+.bg-surface-color{
+  background-color: var(--surface-color);
+}
