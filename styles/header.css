@@ -21,6 +21,13 @@ header .container{
   
 }
 
+#profile img{
+  width: 176px;
+  height: 176px ;
+  object-fit: cover;
+  border-radius: 50%; /*Fazendo o arredondamento de borda da imagem*/
+}
+
 #profile h1 {
   color: var(--text-color-primary);
   font: var(--text-lg);
